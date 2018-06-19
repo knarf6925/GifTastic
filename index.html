@@ -13,26 +13,29 @@
 <header>Giftastic!</header>
 
 <body>
-	<div class="btn-group btn-group-lg" role="group" aria-label="Basic example">
-		<button type="button" class="btn btn-dark">4</button>
-		<button type="button" class="btn btn-dark">4</button>
-		<button type="button" class="btn btn-dark">4</button>
-		<button type="button" class="btn btn-dark">4</button>
-		<button type="button" class="btn btn-dark">4</button>
-		<button type="button" class="btn btn-dark">4</button>
-		<button type="button" class="btn btn-dark">4</button>
-		<button type="button" class="btn btn-dark">4</button>
-		<button type="button" class="btn btn-dark">4</button>
-		<button type="button" class="btn btn-dark">4</button>
+    <div class="container" "=">
+    <div id="animalButtons">
+		<button class="btn btn-info animal" data-name="Dog">Dog</button>
+		<button class="btn btn-info animal" data-name="Cat">Cat</button>
+		<button class="btn btn-info animal" data-name="Bird">Bird</button>
+		<button class="btn btn-info animal" data-name="Fish">Fish</button>
+		<button class="btn btn-info animal" data-name="Whale">Whale</button>
+		<button class="btn btn-info animal" data-name="Lion">Lion</button>
+		<button class="btn btn-info animal" data-name="Tiger">Tiger</button>
+		<button class="btn btn-info animal" data-name="Bear">Bear</button>
+		<button class="btn btn-info animal" data-name="Lizard">lizard</button>
+		<button class="btn btn-info animal" data-name="Zebra">Zebra</button>
 	</div>
 
 	<br><br>
 
 	<div id="gifs" style="float:left"></div>
+    
 	<h4>Add more GIFs!</h4>
 	<form id="gif-form">
 		<label for="gif-input"></label>
-		<input type="text" value="" id="gif-input"><br><br>
+		<input type="text" value="" id="gif-input">
+        <br><br>
 
 		<input type="submit" name="Button" class="btn btn-success" id="theButton" style="margin-left:8px">
 	</form>
