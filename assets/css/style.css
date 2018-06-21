@@ -1,6 +1,6 @@
 header {
     text-align: center;
-    color: red;
+    color:darkgrey;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 400%;
     border: 1px solid powderblue;
@@ -9,12 +9,22 @@ header {
 }
    
 body{
-    background-image: url(../images/big_1475183108_image.jpg);
+    background-image: url(../images/bg41.jpg);
     background-size: cover;
     
   
 }
 
+#theButton {
+    color: white;
+    background-color: royalblue;
+}
+
+#container{
+    
+   
+
+}
 
    
    

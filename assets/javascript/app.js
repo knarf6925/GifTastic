@@ -19,7 +19,7 @@ $(document).ready(function(){
 
                     var animalDiv = $('<div>');
 
-                    var p =$('<p>');
+                    var p =$('<h4>');
 
                     p.html(results[i].rating);
 
@@ -73,10 +73,10 @@ $(document).ready(function(){
             var animalButton = $("#gif-input").val();
             //adds the new animal
 
-            var newButton = $("<button>").addClass( "btn btn-info animal").attr('data-name',animalButton).html(animalButton).css({'margin': '5px'});
+            var newButton = $("<button>").addClass( "btn btn-info animal").attr('data-name',animalButton).html(animalButton);
             
             $("#animalsbuttons").append(newButton);
-                console.log("Work");
+                console.log("Works");
 
             queryURL = "https://api.giphy.com/v1/gifs/search?q=" + animalButton + "&api_key=dc6zaTOxFJmzC&limit=10";
                 console.log(animalButton);
@@ -122,7 +122,7 @@ $(document).ready(function(){
                     var state = $(this).attr('data-state'); 
                     console.log(this);
 
-                    if (state == 'still') {
+                    if (state === 'still') {
                     
                     $(this).attr('src', $(this).data('animate'));
                     
