@@ -1,8 +1,13 @@
 $(document).ready(function(){
-
+   
     $('button').on('click', function() {
+
+         //giphy API URL for a animal image
+
         var animal = $(this).data('name');
         var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + animal + "&api_key=dc6zaTOxFJmzC&limit=10";
+
+        // Perfoming an AJAX GET request to our queryURL
 
         $.ajax({
             url: queryURL,
@@ -18,11 +23,12 @@ $(document).ready(function(){
                 for (var i = 0; i < results.length; i++) {
 
                     var animalDiv = $('<div>');
-
+                
+                //displays rating of GIF
                     var p =$('<h4>');
 
                     p.html(results[i].rating);
-
+                    
                     var animalImage = $('<img>');
 
                     animalImage.addClass('anImg')
@@ -41,7 +47,7 @@ $(document).ready(function(){
 
                     animalDiv.prependTo($('#gifs'));
                 }
-
+                    // pause/play GIF
                 $('.anImg').on('click', function() {
             
                     var state = $(this).attr('data-state'); 
